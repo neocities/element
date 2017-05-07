@@ -1,0 +1,26 @@
+{
+  "name": "elementcss",
+  "version": "0.0.1",
+  "description": "An experimental CSS framework for static HTML coders",
+  "main": "index.js",
+  "scripts": {
+    "build": "node node_modules/gulp/bin/gulp.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/neocities/elementcss.git"
+  },
+  "author": "kyle@kyledrake.net",
+  "dependencies": {},
+  "license": "MIT",
+  "homepage": "https://elementcss.neocities.org",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-clean-css": "^3.0.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.1.2",
+    "pump": "*"
+  }
+}

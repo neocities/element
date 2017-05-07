@@ -1,0 +1,338 @@
+<!doctype html>
+<html class="element">
+  <head>
+    <title>Element CSS</title>
+    <link rel="stylesheet" href="element.css">
+    <script src="element.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/styles/sunburst.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#examples">Examples</a>
+        <a href="#getstarted">Get Started</a>
+      </nav>
+
+      <h1>Element CSS</h1>
+
+      <strong>An experimental CSS "framework" for static HTML coders.</strong>
+    </header>
+
+    <p>
+      <strong>Element CSS is the CSS framework for coders that want to go back to just writing simple, static HTML that looks presentable.</strong>
+
+      In contrast to frameworks like Bootstrap that require a lot of nested <code>&lt;div&gt;</code> elements with inline classes, Element CSS focuses on just using
+      basic HTML elements to make a web site. The result is the ability to quickly and easily draft up document-oriented static web sites that are easy to
+      edit and manage with just a text editor. View the source code of this site, and you'll see what I mean.
+    </p>
+
+    <p>
+      Think of it as a Markdown for HTML. Instead of writing markdown and then converting it into
+      unreadable HTML, we eliminate the Markdown part and just create sites directly in readable HTML. This also lets us do things Markdown can't really do well, like grids.
+    </p>
+
+    <a name="examples"></a>
+    <h2>Examples</h2>
+
+    <div>
+      <span>
+        <h3>Grid Column 1</h3>
+        <p>
+          Based on <a href="http://chrisnager.github.io/ungrid/">ungrid</a>, Element CSS wires up <code>&lt;div&gt;</code> to be a row
+          and <code>&lt;span&gt;</code> to be a column, using a clever CSS hack to make an easy, auto-sized, responsive grid that Just Works.
+        </p>
+      </span>
+      <span>
+        <h3>Grid Column 2</h3>
+        <p>
+          I've had twelve years to think about it. And if I had it to do over again, I would have grabbed the phaser and pointed it
+          at you instead of them. Not if I weaken first. For an android with no feelings, he sure managed to evoke them in others.
+        </p>
+      </span>
+    </div>
+
+    <xmp>
+      <div>
+        <span>
+          <h3>Column</h3>
+          <p>I'm the first column!</p>
+        </span>
+        <span>
+          <h3>Another Column</h3>
+          <p>I'm the second column!</p>
+        </span>
+        <span style="width: 20%">
+          <h3>Smaller</h3>
+          <p>I'm grid 3, but a lot smaller than the others.</p>
+        </span>
+      </div>
+    </xmp>
+
+    <div>
+      <span>
+        <h3>Headers</h3>
+        <h1>H1 Header</h1>
+        <h2>H2 Header</h2>
+        <h3>H3 Header</h3>
+        <h4>H4 Header</h4>
+        <h5>H5 Header</h5>
+        <h6>H6 Header</h6>
+      </span>
+
+      <span style="width: 70%">
+        <h3>Images</h3>
+        <p>Oversized images are auto-resized to fit the column:</p>
+        <img src="harbor.jpg">
+      </span>
+    </div>
+
+    <div>
+      <span>
+        <xmp>
+          <h3>Headers</h3>
+          <h1>H1 Header</h1>
+          <h2>H2 Header</h2>
+          <h3>H3 Header</h3>
+          <h4>H4 Header</h4>
+          <h5>H5 Header</h5>
+          <h6>H6 Header</h6>
+        </xmp>
+      </span>
+
+      <span style="width: 70%">
+        <xmp>
+          <h3>Images</h3>
+          <p>Oversized images are auto-resized to fit the column:</p>
+          <img src="images/harbor.jpg">
+        </xmp>
+      </span>
+    </div>
+
+    <div>
+      <span>
+        <h3>Ordered List</h3>
+        <ol>
+          <li>Blue</li>
+          <li>Green</li>
+          <li>Red</li>
+        </ol>
+      </span>
+
+      <span>
+        <h3>Unordered List</h3>
+        <ul>
+          <li>Blue</li>
+          <li>Green</li>
+          <li>Red</li>
+        </ul>
+      </span>
+
+      <span style="width: 64%">
+        <center><h3>Table</h3></center>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Favorite Color</th>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>Blue</td>
+          </tr>
+          <tr>
+            <td>Commander Riker</td>
+            <td>Trombone</td>
+          </tr>
+        </table>
+      </span>
+    </div>
+
+    <div>
+      <span>
+        <xmp>
+          <h3>Ordered List</h3>
+          <ol>
+            <li>Blue</li>
+            <li>Green</li>
+            <li>Red</li>
+          </ol>
+
+          <h3>Unordered List</h3>
+          <ul>
+            <li>Blue</li>
+            <li>Green</li>
+            <li>Red</li>
+          </ul>
+        </xmp>
+      </span>
+      <span style="width: 64%">
+        <xmp>
+          <center><h3>Table</h3></center>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Favorite Color</th>
+            </tr>
+            <tr>
+              <td>John Doe</td>
+              <td>Blue</td>
+            </tr>
+            <tr>
+              <td>Commander Riker</td>
+              <td>Trombone</td>
+            </tr>
+          </table>
+        </xmp>
+      </span>
+    </div>
+
+    <div>
+      <span>
+        <h3>Code</h3>
+
+        <p>
+          <code>&lt;code&gt;</code> elements used in a <code>&lt;p&gt;</code> will be inline-block: <code>echo('hello world!')</code>. Code tags
+          outside of a <code>&lt;p&gt;</code> will be blocks, with code indenting automatically fixed (no <code>&lt;pre&gt;</code> indenting gymnastics needed).
+        </p>
+
+        <code>
+          const user = {
+            name: 'Commander Riker',
+            age: 45,
+            username: 'hotluvin33'
+          }
+          console.log(user.name)
+        </code>
+
+        <p>
+          If you need to embed HTML code examples, use the <code>&lt;xmp&gt;</code> tag, which makes it so you don't need to encode escapes.
+          Sadly, the HTML5 spec is trying to obsolete the <code>&lt;xmp&gt;</code> tag even though it's the only way to make this work,
+          but all browsers seem to be supporting it anyways. Use at your own risk.
+        </p>
+
+        <xmp>
+          <!doctype html>
+          <html>
+            <head>
+              <title>Hello!</title>
+            </head>
+            <body>
+              <h1>I didn't have to escape any of this (inspect the source code).</h1>
+            </body>
+          </html>
+        </xmp>
+
+        <p>If you want syntax highlighting, just embed <a href="https://highlightjs.org/">highlight.js</a> and the highlighting style you want and it's automatically configured.
+
+      </span>
+    </div>
+
+    <div>
+      <span>
+        <h3>Forms</h3>
+        <form>
+          <label for="email">Email</label>
+          <input id="email" type="text" placeholder="Email">
+
+          <label for="comments">What do you think?</label>
+          <textarea id="comments" name="comments" rows="5" cols="30"></textarea>
+
+          <label for="state">State</label>
+          <select id="state">
+            <option>OR</option>
+            <option>MN</option>
+            <option>CA</option>
+          </select>
+
+          <label for="remember">
+            <input type="checkbox" name="remember" value="1"> Remember me
+          </label>
+
+          <p>Favorite Color?</p>
+          <label for="color-blue">
+            <input id="color-blue" type="radio" name="color" value="blue" checked> Blue
+          </label>
+
+          <label for="color-trombone">
+            <input id="color-trombone" type="radio" name="color" value="trombone"> Trombone
+          </label>
+
+          <button>Submit</button>
+        </form>
+      </span>
+      <span style="width: 70%">
+        <xmp>
+          <h3>Forms</h3>
+          <form>
+            <label for="email">Email</label>
+            <input name="email" type="text" placeholder="Email">
+
+            <label for="comments">What do you think?</label>
+            <textarea name="comments" rows="5" cols="30"></textarea>
+
+            <label for="state">State</label>
+            <select id="state">
+              <option>OR</option>
+              <option>MN</option>
+              <option>CA</option>
+            </select>
+
+            <label>
+              <input type="checkbox" name="remember" value="1"> Remember me
+            </label>
+
+            <p>Favorite Color?</p>
+            <label>
+              <input type="radio" name="color" value="blue" checked> Blue
+            </label>
+
+            <label>
+              <input type="radio" name="color" value="trombone"> Trombone
+            </label>
+
+            <button>Submit</button>
+          </form>
+        </xmp>
+      </span>
+    </div>
+
+    <div>
+      <span>
+
+      </span>
+    </div>
+
+    <a name="getstarted"></a>
+    <h2>How to Use</h2>
+
+    <p>Use this template to get started:</p>
+
+    <xmp>
+      <!doctype html>
+      <html>
+        <head>
+          <link rel="stylesheet" href="element.css">
+          <script src="element.js"></script>
+          <title>Hello!</title>
+        </head>
+        <body>
+          <header>
+            <nav>
+              <a href="one.html">Link One</a>
+              <a href="two.html">Link Two</a>
+            </nav>
+
+            <h1>Site Name</h1>
+            <strong>Subtitle for site</strong>
+          </header>
+
+          <p>Okay, you're all set!</p>
+        </body>
+      </html>
+    </xmp>
+
+    <footer>
+      <p>Element CSS: A <a href="https://neocities.org">Neocities</a> project.</p>
+    </footer>
+  </body>
+</html>
