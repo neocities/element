@@ -16,20 +16,27 @@
 
       <h1>Element CSS</h1>
 
-      <strong>An experimental CSS "framework" for static HTML coders.</strong>
+      <strong>Saner defaults for HTML elements.</strong>
     </header>
 
     <p>
-      <strong>Element CSS is the CSS framework for coders that want to go back to just writing simple, static HTML that looks presentable.</strong>
-
-      In contrast to frameworks like Bootstrap that require a lot of nested <code>&lt;div&gt;</code> elements with inline classes, Element CSS focuses on just using
-      basic HTML elements to make a web site. The result is the ability to quickly and easily draft up document-oriented static web sites that are easy to
-      edit and manage with just a text editor. View the source code of this site, and you'll see what I mean.
+      Element is a CSS design / framework that focuses on styling basic HTML
+      elements. In contrast to most design frameworks which utilize a lot of nested
+      <code>&lt;div&gt;</code> elements and inline classes, Element does away with that,
+      making it quicker and easier to create decent-looking static web sites from
+      scratch that are easy to edit and manage with just a text editor.
     </p>
 
     <p>
-      Think of it as a Markdown for HTML. Instead of writing markdown and then converting it into
-      unreadable HTML, we eliminate the Markdown part and just create sites directly in readable HTML. This also lets us do things Markdown can't really do well, like grids.
+      Think of it as a Markdown for HTML. Instead of writing markdown and then converting
+      it into nasty HTML, we eliminate the Markdown part and just create sites directly
+      in clean, readable HTML. This also lets us do things Markdown can't really do well,
+      like grids.
+    </p>
+
+    <p>
+      This project is still in it's early stages. If you have any ideas or improvements,
+      please feel free to <a href="https://github.com/neocities/element">chime in</a>.
     </p>
 
     <a name="examples"></a>
@@ -47,7 +54,7 @@
         <h3>Grid Column 2</h3>
         <p>
           I've had twelve years to think about it. And if I had it to do over again, I would have grabbed the phaser and pointed it
-          at you instead of them. Not if I weaken first. For an android with no feelings, he sure managed to evoke them in others.
+          at you instead of them.
         </p>
       </span>
     </div>
@@ -78,17 +85,7 @@
         <h4>H4 Header</h4>
         <h5>H5 Header</h5>
         <h6>H6 Header</h6>
-      </span>
 
-      <span style="width: 70%">
-        <h3>Images</h3>
-        <p>Oversized images are auto-resized to fit the column:</p>
-        <img src="harbor.jpg">
-      </span>
-    </div>
-
-    <div>
-      <span>
         <xmp>
           <h3>Headers</h3>
           <h1>H1 Header</h1>
@@ -101,10 +98,14 @@
       </span>
 
       <span style="width: 70%">
+        <h3>Images</h3>
+        <p>Oversized images are auto-resized to fit the column:</p>
+        <img src="harbor.jpg">
+
         <xmp>
           <h3>Images</h3>
           <p>Oversized images are auto-resized to fit the column:</p>
-          <img src="images/harbor.jpg">
+          <img src="harbor.jpg">
         </xmp>
       </span>
     </div>
@@ -117,6 +118,14 @@
           <li>Green</li>
           <li>Red</li>
         </ol>
+
+        <xmp>
+          <ol>
+            <li>Blue</li>
+            <li>Green</li>
+            <li>Red</li>
+          </ol>
+        </xmp>
       </span>
 
       <span>
@@ -126,9 +135,17 @@
           <li>Green</li>
           <li>Red</li>
         </ul>
+
+        <xmp>
+          <ul>
+            <li>Blue</li>
+            <li>Green</li>
+            <li>Red</li>
+          </ul>
+        </xmp>
       </span>
 
-      <span style="width: 64%">
+      <span style="width: 50%">
         <center><h3>Table</h3></center>
         <table>
           <tr>
@@ -144,28 +161,7 @@
             <td>Trombone</td>
           </tr>
         </table>
-      </span>
-    </div>
 
-    <div>
-      <span>
-        <xmp>
-          <h3>Ordered List</h3>
-          <ol>
-            <li>Blue</li>
-            <li>Green</li>
-            <li>Red</li>
-          </ol>
-
-          <h3>Unordered List</h3>
-          <ul>
-            <li>Blue</li>
-            <li>Green</li>
-            <li>Red</li>
-          </ul>
-        </xmp>
-      </span>
-      <span style="width: 64%">
         <xmp>
           <center><h3>Table</h3></center>
           <table>
@@ -195,17 +191,18 @@
           outside of a <code>&lt;p&gt;</code> will be blocks, with code indenting automatically fixed (no <code>&lt;pre&gt;</code> indenting gymnastics needed).
         </p>
 
-        <code>
-          const user = {
-            name: 'Commander Riker',
-            age: 45,
-            username: 'hotluvin33'
-          }
-          console.log(user.name)
-        </code>
+        <xmp>
+          <code>
+            const user = {
+              name: 'Commander Riker',
+              username: 'hotjazzhotternights1337'
+            }
+            console.log(user.name)
+          </code>
+        </xmp>
 
         <p>
-          If you need to embed HTML code examples, use the <code>&lt;xmp&gt;</code> tag, which makes it so you don't need to encode escapes.
+          If you need to embed HTML code examples, you can use the <code>&lt;xmp&gt;</code> tag, which makes it so you don't need to encode escapes.
           Sadly, the HTML5 spec is trying to obsolete the <code>&lt;xmp&gt;</code> tag even though it's the only way to make this work,
           but all browsers seem to be supporting it anyways. Use at your own risk.
         </p>
@@ -311,8 +308,8 @@
       <!doctype html>
       <html>
         <head>
-          <link rel="stylesheet" href="element.css">
-          <script src="element.js"></script>
+          <link rel="stylesheet" href="https://elementcss.neocities.org/element.css">
+          <script src="https://elementcss.neocities.org/element.js"></script>
           <title>Hello!</title>
         </head>
         <body>
@@ -330,6 +327,9 @@
         </body>
       </html>
     </xmp>
+
+    <h2>Special Thanks</h2>
+      The CSS for this project is heavily based on the excellent <a href="https://github.com/sindresorhus/github-markdown-css">github-markdown-css</a>.
 
     <footer>
       <p>Element CSS: A <a href="https://neocities.org">Neocities</a> project.</p>
