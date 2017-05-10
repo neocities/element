@@ -643,17 +643,24 @@
   overflow: auto;
 }
 
+.element grid-row {
+  display: block
+}
+.element grid-col {
+  display: inline
+}
+
 @media (min-width: 50em) {
-  .element body>div {
-      width: 100%;
+  .element grid-row {
+    width: 100%;
     display: table;
     table-layout: fixed;
   }
-  .element body>div>span {
+  .element grid-col {
     display: table-cell;
     padding-right: 2%;
   }
-  .element body>div>span:last-child {
+  .element grid-col:last-child {
     padding-left: 2%;
     padding-right: 0;
   }

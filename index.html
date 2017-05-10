@@ -42,42 +42,42 @@
     <a name="examples"></a>
     <h2>Examples</h2>
 
-    <div>
-      <span>
+    <grid-row>
+      <grid-col>
         <h3>Grid Column 1</h3>
         <p>
-          Based on <a href="http://chrisnager.github.io/ungrid/">ungrid</a>, Element CSS wires up <code>&lt;div&gt;</code> to be a row
-          and <code>&lt;span&gt;</code> to be a column, using a clever CSS hack to make an easy, auto-sized, responsive grid that Just Works.
+          Based on <a href="http://chrisnager.github.io/ungrid/">ungrid</a>, Element CSS wires up <code>&lt;grid-row&gt;</code> to be a row
+          and <code>&lt;grid-col&gt;</code> to be a column, using a clever CSS hack to make an easy, auto-sized, responsive grid that Just Works.
         </p>
-      </span>
-      <span>
+      </grid-col>
+      <grid-col>
         <h3>Grid Column 2</h3>
         <p>
           I've had twelve years to think about it. And if I had it to do over again, I would have grabbed the phaser and pointed it
           at you instead of them.
         </p>
-      </span>
-    </div>
+      </grid-col>
+    </grid-row>
 
     <xmp>
-      <div>
-        <span>
+      <grid-row>
+        <grid-col>
           <h3>Column</h3>
           <p>I'm the first column!</p>
-        </span>
-        <span>
+        </grid-col>
+        <grid-col>
           <h3>Another Column</h3>
           <p>I'm the second column!</p>
-        </span>
-        <span style="width: 20%">
+        </grid-col>
+        <grid-col style="width: 20%">
           <h3>Smaller</h3>
           <p>I'm grid 3, but a lot smaller than the others.</p>
-        </span>
-      </div>
+        </grid-col>
+      </grid-row>
     </xmp>
 
-    <div>
-      <span>
+    <grid-row>
+      <grid-col>
         <h3>Headers</h3>
         <h1>H1 Header</h1>
         <h2>H2 Header</h2>
@@ -95,9 +95,9 @@
           <h5>H5 Header</h5>
           <h6>H6 Header</h6>
         </xmp>
-      </span>
+      </grid-col>
 
-      <span style="width: 70%">
+      <grid-col style="width: 70%">
         <h3>Images</h3>
         <p>Oversized images are auto-resized to fit the column:</p>
         <img src="harbor.jpg">
@@ -107,11 +107,11 @@
           <p>Oversized images are auto-resized to fit the column:</p>
           <img src="harbor.jpg">
         </xmp>
-      </span>
-    </div>
+      </grid-col>
+    </grid-row>
 
-    <div>
-      <span>
+    <grid-row>
+      <grid-col>
         <h3>Ordered List</h3>
         <ol>
           <li>Blue</li>
@@ -126,9 +126,9 @@
             <li>Red</li>
           </ol>
         </xmp>
-      </span>
+      </grid-col>
 
-      <span>
+      <grid-col>
         <h3>Unordered List</h3>
         <ul>
           <li>Blue</li>
@@ -143,9 +143,9 @@
             <li>Red</li>
           </ul>
         </xmp>
-      </span>
+      </grid-col>
 
-      <span style="width: 50%">
+      <grid-col style="width: 50%">
         <center><h3>Table</h3></center>
         <table>
           <tr>
@@ -179,11 +179,11 @@
             </tr>
           </table>
         </xmp>
-      </span>
-    </div>
+      </grid-col>
+    </grid-row>
 
-    <div>
-      <span>
+    <grid-row>
+      <grid-col>
         <h3>Code</h3>
 
         <p>
@@ -219,13 +219,15 @@
           </html>
         </xmp>
 
-        <p>If you want syntax highlighting, just embed <a href="https://highlightjs.org/">highlight.js</a> and the highlighting style you want and it's automatically configured.
+        <p>
+          If you want syntax highlighting, just embed <a href="https://highlightjs.org/">highlight.js</a> and the highlighting style
+          you want and it's automatically configured.
+        </p>
+      </grid-col>
+    </grid-row>
 
-      </span>
-    </div>
-
-    <div>
-      <span>
+    <grid-row>
+      <grid-col>
         <h3>Forms</h3>
         <form>
           <label for="email">Email</label>
@@ -256,8 +258,8 @@
 
           <button>Submit</button>
         </form>
-      </span>
-      <span style="width: 70%">
+      </grid-col>
+      <grid-col style="width: 70%">
         <xmp>
           <h3>Forms</h3>
           <form>
@@ -290,14 +292,8 @@
             <button>Submit</button>
           </form>
         </xmp>
-      </span>
-    </div>
-
-    <div>
-      <span>
-
-      </span>
-    </div>
+      </grid-col>
+    </grid-row>
 
     <a name="getstarted"></a>
     <h2>How to Use</h2>
