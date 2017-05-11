@@ -1,6 +1,6 @@
 {
   "name": "elementcss",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An experimental CSS framework for static HTML coders",
   "main": "index.js",
   "scripts": {
