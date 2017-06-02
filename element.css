@@ -9,138 +9,6 @@
   word-wrap: break-word;
 }
 
-.element .pl-c {
-  color: #969896;
-}
-
-.element .pl-c1,
-.element .pl-s .pl-v {
-  color: #0086b3;
-}
-
-.element .pl-e,
-.element .pl-en {
-  color: #795da3;
-}
-
-.element .pl-smi,
-.element .pl-s .pl-s1 {
-  color: #333;
-}
-
-.element .pl-ent {
-  color: #63a35c;
-}
-
-.element .pl-k {
-  color: #a71d5d;
-}
-
-.element .pl-s,
-.element .pl-pds,
-.element .pl-s .pl-pse .pl-s1,
-.element .pl-sr,
-.element .pl-sr .pl-cce,
-.element .pl-sr .pl-sre,
-.element .pl-sr .pl-sra {
-  color: #183691;
-}
-
-.element .pl-v,
-.element .pl-smw {
-  color: #ed6a43;
-}
-
-.element .pl-bu {
-  color: #b52a1d;
-}
-
-.element .pl-ii {
-  color: #f8f8f8;
-  background-color: #b52a1d;
-}
-
-.element .pl-c2 {
-  color: #f8f8f8;
-  background-color: #b52a1d;
-}
-
-.element .pl-c2::before {
-  content: "^M";
-}
-
-.element .pl-sr .pl-cce {
-  font-weight: bold;
-  color: #63a35c;
-}
-
-.element .pl-ml {
-  color: #693a17;
-}
-
-.element .pl-mh,
-.element .pl-mh .pl-en,
-.element .pl-ms {
-  font-weight: bold;
-  color: #1d3e81;
-}
-
-.element .pl-mq {
-  color: #008080;
-}
-
-.element .pl-mi {
-  font-style: italic;
-  color: #333;
-}
-
-.element .pl-mb {
-  font-weight: bold;
-  color: #333;
-}
-
-.element .pl-md {
-  color: #bd2c00;
-  background-color: #ffecec;
-}
-
-.element .pl-mi1 {
-  color: #55a532;
-  background-color: #eaffea;
-}
-
-.element .pl-mc {
-  color: #ef9700;
-  background-color: #ffe3b4;
-}
-
-.element .pl-mi2 {
-  color: #d8d8d8;
-  background-color: #808080;
-}
-
-.element .pl-mdr {
-  font-weight: bold;
-  color: #795da3;
-}
-
-.element .pl-mo {
-  color: #1d3e81;
-}
-
-.element .pl-ba {
-  color: #595e62;
-}
-
-.element .pl-sg {
-  color: #c0c0c0;
-}
-
-.element .pl-corl {
-  text-decoration: underline;
-  color: #183691;
-}
-
 .element a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
@@ -486,10 +354,6 @@
   margin-top: 16px;
 }
 
-.element li+li {
-  margin-top: 0.25em;
-}
-
 .element dl {
   padding: 0;
 }
@@ -605,31 +469,24 @@
   max-width: 980px;
   margin: 0 auto;
   padding: 45px;
+  position: relative;
+  padding-bottom: 200px;
+}
+
+.element body:last-child {
+  margin-bottom: 50px;
 }
 
 .element header {
-  border-bottom: 1px solid #eaecef;
-  margin-bottom: 2.0em;
+  margin-bottom: 1.0em;
 }
 
 .element header h1 {
   margin: 0px;
   padding: 0px;
-  font-size: 3em;
+  /* font-size: 3em; */
+  font-size: 7vmin;
   border-bottom: none;
-}
-
-.element nav {
-  font-size: 20px;
-  text-align: right;
-}
-
-.element nav a {
-  margin-right: 20px;
-}
-
-.element nav a:last-child {
-  margin-right: 0px;
 }
 
 .element code, .element xmp {
@@ -717,15 +574,6 @@
   border: transparent;
 }
 
-.element body {
-  position: relative;
-  padding-bottom: 200px;
-}
-
-.element body:last-child {
-  margin-bottom: 50px;
-}
-
 .element footer {
   color: #636c72!important;
   position: absolute;
@@ -751,4 +599,9 @@
     background-color: grey;
     word-break: keep-all;
     vertical-align: middle;
+}
+
+@viewport {
+  zoom: 1.0;
+  width: extend-to-zoom;
 }
