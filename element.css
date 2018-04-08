@@ -500,24 +500,24 @@
   overflow: auto;
 }
 
-.element grid-row {
+.element g-row {
   display: block
 }
-.element grid-col {
+.element g-col {
   display: inline
 }
 
 @media (min-width: 50em) {
-  .element grid-row {
+  .element g-row {
     width: 100%;
     display: table;
     table-layout: fixed;
   }
-  .element grid-col {
+  .element g-col {
     display: table-cell;
     padding-right: 2%;
   }
-  .element grid-col:last-child {
+  .element g-col:last-child {
     padding-left: 2%;
     padding-right: 0;
   }
