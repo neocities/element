@@ -1,7 +1,5 @@
 .element {
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  line-height: 1.5;
+  text-size-adjust: 100%;
   color: #24292e;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -11,7 +9,7 @@
 
 .element a {
   background-color: transparent;
-  -webkit-text-decoration-skip: objects;
+  text-decoration-skip: objects;
 }
 
 .element a:active,
