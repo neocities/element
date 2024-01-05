@@ -1,4 +1,4 @@
-.element {
+html {
   text-size-adjust: 100%;
   color: #24292e;
   font-family: Helvetica, Arial, sans-serif;
@@ -7,88 +7,88 @@
   word-wrap: break-word;
 }
 
-.element a {
+a {
   background-color: transparent;
   text-decoration-skip: objects;
 }
 
-.element a:active,
-.element a:hover {
+a:active,
+a:hover {
   outline-width: 0;
 }
 
-.element strong {
+strong {
   font-weight: inherit;
 }
 
-.element strong {
+strong {
   font-weight: bolder;
 }
 
-.element h1 {
+h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
-.element img {
+img {
   border-style: none;
 }
 
-.element svg:not(:root) {
+svg:not(:root) {
   overflow: hidden;
 }
 
-.element code,
-.element kbd,
-.element xmp {
+code,
+kbd,
+xmp {
   font-family: monospace;
   font-size: 1em;
 }
 
-.element hr {
+hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
 
-.element input {
+input {
   font: inherit;
   margin: 0;
 }
 
-.element input {
+input {
   overflow: visible;
 }
 
-.element [type="checkbox"] {
+[type="checkbox"] {
   box-sizing: border-box;
   padding: 0;
 }
 
-.element * {
+* {
   box-sizing: border-box;
 }
 
-.element input {
+input {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 }
 
-.element a {
+a {
   color: #0366d6;
   text-decoration: none;
 }
 
-.element a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-.element strong {
+strong {
   font-weight: 600;
 }
 
-.element hr {
+hr {
   height: 0;
   margin: 15px 0;
   overflow: hidden;
@@ -97,12 +97,12 @@
   border-bottom: 1px solid #dfe2e5;
 }
 
-.element hr::before {
+hr::before {
   display: table;
   content: "";
 }
 
-.element hr::after {
+hr::after {
   display: table;
   clear: both;
   content: "";
@@ -110,117 +110,118 @@
 
 
 
-.element td,
-.element th {
+td,
+th {
   padding: 0;
 }
 
-.element h1,
-.element h2,
-.element h3,
-.element h4,
-.element h5,
-.element h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.element h1 {
-  font-size: 32px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 24px;
+  margin-bottom: 16px;
   font-weight: 600;
+  line-height: 1.25;
 }
 
-.element h2 {
-  font-size: 24px;
-  font-weight: 600;
+h1 {
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  border-bottom: 1px solid #eaecef;
 }
 
-.element h3 {
-  font-size: 20px;
-  font-weight: 600;
+h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.5em;
+  border-bottom: 1px solid #eaecef;
 }
 
-.element h4 {
-  font-size: 16px;
-  font-weight: 600;
+h3 {
+  font-size: 1.25em;
 }
 
-.element h5 {
-  font-size: 14px;
-  font-weight: 600;
+h4 {
+  font-size: 1em;
 }
 
-.element h6 {
-  font-size: 12px;
-  font-weight: 600;
+h5 {
+  font-size: 0.875em;
 }
 
-.element p {
+h6 {
+  font-size: 0.85em;
+  color: #6a737d;
+}
+
+p {
   margin-top: 0;
   margin-bottom: 10px;
 }
 
-.element blockquote {
+blockquote {
   margin: 0;
 }
 
-.element ul,
-.element ol {
+ul,
+ol {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.element ol ol,
-.element ul ol {
+ol ol,
+ul ol {
   list-style-type: lower-roman;
 }
 
-.element ul ul ol,
-.element ul ol ol,
-.element ol ul ol,
-.element ol ol ol {
+ul ul ol,
+ul ol ol,
+ol ul ol,
+ol ol ol {
   list-style-type: lower-alpha;
 }
 
-.element dd {
+dd {
   margin-left: 0;
 }
 
-.element code, .element xmp {
+code, xmp {
   font-family: monospace;
   font-size: 12px;
 }
 
-.element .repo-config-option:not(:checked) ~ .time-remaining {
+.repo-config-option:not(:checked) ~ .time-remaining {
   display: none;
 }
 
-.element .pl-0 {
+.pl-0 {
   padding-left: 0 !important;
 }
 
-.element .pl-1 {
+.pl-1 {
   padding-left: 4px !important;
 }
 
-.element .pl-2 {
+.pl-2 {
   padding-left: 8px !important;
 }
 
-.element .pl-3 {
+.pl-3 {
   padding-left: 16px !important;
 }
 
-.element .pl-4 {
+.pl-4 {
   padding-left: 24px !important;
 }
 
-.element .pl-5 {
+.pl-5 {
   padding-left: 32px !important;
 }
 
-.element .pl-6 {
+.pl-6 {
   padding-left: 40px !important;
 }
 
@@ -243,22 +244,22 @@
   margin-bottom: 0 !important;
 }
 
-.element a:not([href]) {
+a:not([href]) {
   color: inherit;
   text-decoration: none;
 }
 
-.element p,
-.element blockquote,
-.element ul,
-.element ol,
-.element dl,
-.element table {
+p,
+blockquote,
+ul,
+ol,
+dl,
+table {
   margin-top: 0;
   margin-bottom: 16px;
 }
 
-.element hr {
+hr {
   height: 0.25em;
   padding: 0;
   margin: 24px 0;
@@ -266,21 +267,21 @@
   border: 0;
 }
 
-.element blockquote {
+blockquote {
   padding: 0 1em;
   color: #6a737d;
   border-left: 0.25em solid #dfe2e5;
 }
 
-.element blockquote>:first-child {
+blockquote>:first-child {
   margin-top: 0;
 }
 
-.element blockquote>:last-child {
+blockquote>:last-child {
   margin-bottom: 0;
 }
 
-.element kbd {
+kbd {
   display: inline-block;
   padding: 3px 5px;
   font-size: 11px;
@@ -294,69 +295,28 @@
   box-shadow: inset 0 -1px 0 #959da5;
 }
 
-.element h1,
-.element h2,
-.element h3,
-.element h4,
-.element h5,
-.element h6 {
-  margin-top: 24px;
-  margin-bottom: 16px;
-  font-weight: 600;
-  line-height: 1.25;
-}
-
-.element h1 {
-  padding-bottom: 0.3em;
-  font-size: 2em;
-  border-bottom: 1px solid #eaecef;
-}
-
-.element h2 {
-  padding-bottom: 0.3em;
-  font-size: 1.5em;
-  border-bottom: 1px solid #eaecef;
-}
-
-.element h3 {
-  font-size: 1.25em;
-}
-
-.element h4 {
-  font-size: 1em;
-}
-
-.element h5 {
-  font-size: 0.875em;
-}
-
-.element h6 {
-  font-size: 0.85em;
-  color: #6a737d;
-}
-
-.element ul,
-.element ol {
+ul,
+ol {
   padding-left: 2em;
 }
 
-.element ul ul,
-.element ul ol,
-.element ol ol,
-.element ol ul {
+ul ul,
+ul ol,
+ol ol,
+ol ul {
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.element li>p {
+li>p {
   margin-top: 16px;
 }
 
-.element dl {
+dl {
   padding: 0;
 }
 
-.element dl dt {
+dl dt {
   padding: 0;
   margin-top: 16px;
   font-size: 1em;
@@ -364,12 +324,12 @@
   font-weight: 600;
 }
 
-.element dl dd {
+dl dd {
   padding: 0 16px;
   margin-bottom: 16px;
 }
 
-.element table {
+table {
   border-spacing: 0;
   border-collapse: collapse;
   width: 100%;
@@ -379,31 +339,31 @@
   margin-right:auto;
 }
 
-.element table th {
+table th {
   font-weight: 600;
 }
 
-.element table th,
-.element table td {
+table th,
+table td {
   padding: 6px 13px;
   border: 1px solid #dfe2e5;
 }
 
-.element table tr {
+table tr {
   background-color: #fff;
   border-top: 1px solid #c6cbd1;
 }
 
-.element table tr:nth-child(2n) {
+table tr:nth-child(2n) {
   background-color: #f6f8fa;
 }
 
-.element img {
+img {
   max-width: 100%;
   box-sizing: content-box;
 }
 
-.element code, .element xmp {
+code, xmp {
   padding: 0;
   padding-top: 0.2em;
   padding-bottom: 0.2em;
@@ -413,18 +373,18 @@
   border-radius: 3px;
 }
 
-.element code::before,
-.element code::after {
+code::before,
+code::after {
   letter-spacing: -0.2em;
   content: "\00a0";
 }
 
-.element .full-commit .btn-outline:not(:disabled):hover {
+.full-commit .btn-outline:not(:disabled):hover {
   color: #005cc5;
   border-color: #005cc5;
 }
 
-.element kbd {
+kbd {
   display: inline-block;
   padding: 3px 5px;
   font: 11px monospace;
@@ -438,30 +398,30 @@
   box-shadow: inset 0 -1px 0 #959da5;
 }
 
-.element :checked+.radio-label {
+:checked+.radio-label {
   position: relative;
   z-index: 1;
   border-color: #0366d6;
 }
 
-.element .task-list-item {
+.task-list-item {
   list-style-type: none;
 }
 
-.element .task-list-item+.task-list-item {
+.task-list-item+.task-list-item {
   margin-top: 3px;
 }
 
-.element .task-list-item input {
+.task-list-item input {
   margin: 0 0.2em 0.25em -1.6em;
   vertical-align: middle;
 }
 
-.element hr {
+hr {
   border-bottom-color: #eee;
 }
 
-.element body {
+body {
   box-sizing: border-box;
   min-width: 200px;
   max-width: 980px;
@@ -471,15 +431,15 @@
   padding-bottom: 200px;
 }
 
-.element body:last-child {
+body:last-child {
   margin-bottom: 50px;
 }
 
-.element header {
+header {
   margin-bottom: 1.0em;
 }
 
-.element header h1 {
+header h1 {
   margin: 0px;
   padding: 0px;
   /* font-size: 3em; */
@@ -487,7 +447,7 @@
   border-bottom: none;
 }
 
-.element code, .element xmp {
+code, xmp {
   margin-bottom: 20px;
   padding-left: 20px;
   white-space: pre;
@@ -498,45 +458,45 @@
   overflow: auto;
 }
 
-.element g-row {
+g-row {
   display: block
 }
-.element g-col {
+g-col {
   display: inline
 }
 
 @media (min-width: 50em) {
-  .element g-row {
+  g-row {
     width: 100%;
     display: table;
     table-layout: fixed;
   }
-  .element g-col {
+  g-col {
     display: table-cell;
     padding-right: 2%;
   }
-  .element g-col:last-child {
+  g-col:last-child {
     padding-left: 2%;
     padding-right: 0;
   }
 }
 
-.element label {
+label {
   display: block;
   margin-bottom: 3px;
 }
 
-.element label>input[type=checkbox] {
+label>input[type=checkbox] {
   margin-top: 10px;
   margin-bottom: 15px;
 }
 
-.element label>input[type=radio] {
+label>input[type=radio] {
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-.element input:not([type]), .element input[type=password], .element input[type=email], .element input[type=url], .element input[type=date], .element input[type=month], .element input[type=time], .element input[type=datetime], .element input[type=datetime-local], .element input[type=week], .element input[type=tel], .element input[type=color], .element input[type=number], .element input[type=search], .element input[type=text], .element select, .element textarea {
+input:not([type]), input[type=password], input[type=email], input[type=url], input[type=date], input[type=month], input[type=time], input[type=datetime], input[type=datetime-local], input[type=week], input[type=tel], input[type=color], input[type=number], input[type=search], input[type=text], select, textarea {
   display: block;
   margin-bottom: 10px;
   padding: .3em;
@@ -548,12 +508,12 @@
   box-sizing: border-box;
 }
 
-.element input:not([type]):focus, .element input[type=password]:focus, .element input[type=email]:focus, .element input[type=url]:focus, .element input[type=date]:focus, .element input[type=month]:focus, .element input[type=time]:focus, .element input[type=datetime]:focus, .element input[type=datetime-local]:focus, .element input[type=week]:focus, .element input[type=tel]:focus, .element input[type=color]:focus, .element input[type=number]:focus, .element input[type=search]:focus, .element input[type=text]:focus, .element select:focus, .element textarea:focus {
+input:not([type]):focus, input[type=password]:focus, input[type=email]:focus, input[type=url]:focus, input[type=date]:focus, input[type=month]:focus, input[type=time]:focus, input[type=datetime]:focus, input[type=datetime-local]:focus, input[type=week]:focus, input[type=tel]:focus, input[type=color]:focus, input[type=number]:focus, input[type=search]:focus, input[type=text]:focus, select:focus, textarea:focus {
   outline: 0;
   border-color: #129FEA;
 }
 
-.element select {
+select {
   display: block;
   margin-bottom: 10px;
   height: 2.25em;
@@ -561,7 +521,7 @@
   background-color: #fff;
 }
 
-.element button {
+button {
   background-color: #0078e7;
   color: #fff;
   margin-top: 10px;
@@ -572,7 +532,7 @@
   border: transparent;
 }
 
-.element footer {
+footer {
   color: #636c72!important;
   position: absolute;
   right: 0;
@@ -583,12 +543,12 @@
   text-align: center;
 }
 
-.element html {
+html {
   height: 100%;
   box-sizing: border-box;
 }
 
-.element p>code {
+p>code {
     padding: 0;
     margin: 0;
     font-size: 85%;

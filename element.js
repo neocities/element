@@ -1,10 +1,10 @@
 window.onload = function() {
-  var codeElements = document.querySelectorAll('.element code')
+  var codeElements = document.querySelectorAll('code')
   codeElements.forEach(function(codeElement, i) {
     formatCode(codeElement)
   })
 
-  var xmp = document.querySelectorAll('.element xmp')
+  var xmp = document.querySelectorAll('xmp')
   xmp.forEach(function(xmp, i) {
     var pattern = xmp.innerHTML.match(/\s*\n[\t\s]*/)
     var newHtml = xmp.innerHTML.replace(new RegExp(pattern, "g"),'\n')
